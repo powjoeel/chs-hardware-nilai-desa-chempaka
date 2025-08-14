@@ -6,54 +6,112 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+    }
+
+    /* Hero section */
+    .hero {
+      background: linear-gradient(to right, #007bff, #00a8ff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Product grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Product cards */
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .product-card h3 {
+      margin: 0 0 10px;
+      color: #007bff;
+    }
+    .product-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: white;
+      margin: 0 5px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header chrome-header">
-    <div class="container chrome-header-flex">
-      <div class="chrome-tabs">
-        <span class="chrome-tab"><a href="index.html"><i class="fa-solid fa-shop"></i> CHS Hardware (Nilai)</a></span>
-        <span class="chrome-tab active">Chemicals</span>
-        <span class="chrome-tab"><a href="index.html#catalog">Catalog</a></span>
-        <span class="chrome-tab"><a href="index.html#about">About</a></span>
-        <span class="chrome-tab"><a href="index.html#contact">Contact</a></span>
-      </div>
-    </div>
+
+  <header class="hero">
+    <h1>Chemical Products</h1>
+    <p>Premium solutions for industrial, household, and maintenance needs</p>
   </header>
 
-  <main class="container">
-    <section class="catalog-grid">
-      <article class="product-card chrome-card">
-        <h3>Paint Thinner</h3>
-        <p>High-quality solvent for cleaning and thinning paint.</p>
-      </article>
-      <article class="product-card chrome-card">
-        <h3>Epoxy Adhesive</h3>
-        <p>Strong bonding for metal, wood, and ceramics.</p>
-      </article>
-      <article class="product-card chrome-card">
-        <h3>Rust Remover</h3>
-        <p>Effective formula for removing rust from metal surfaces.</p>
-      </article>
-      <article class="product-card chrome-card">
-        <h3>WD-40 Spray</h3>
-        <p>Lubricates, protects, and stops squeaks instantly.</p>
-      </article>
-      <article class="product-card chrome-card">
-        <h3>Tile Cleaner</h3>
-        <p>Powerful cleaning agent for tiles and grout.</p>
-      </article>
-    </section>
+  <main class="product-grid">
+    <div class="product-card">
+      <h3>Paint Thinner</h3>
+      <p>High-quality solvent for cleaning and thinning paints.</p>
+    </div>
+    <div class="product-card">
+      <h3>Epoxy Adhesive</h3>
+      <p>Strong, durable bonding for wood, metal, and ceramics.</p>
+    </div>
+    <div class="product-card">
+      <h3>Rust Remover</h3>
+      <p>Removes rust efficiently without damaging metal.</p>
+    </div>
+    <div class="product-card">
+      <h3>WD-40 Spray</h3>
+      <p>Multipurpose lubricant and rust prevention spray.</p>
+    </div>
+    <div class="product-card">
+      <h3>Tile Cleaner</h3>
+      <p>Powerful cleaning formula for spotless tiles and grout.</p>
+    </div>
   </main>
 
-  <footer class="site-footer chrome-footer">
-    <div class="container footer-flex">
-      <p>&copy; 2025 CHS Hardware (Nilai). All rights reserved.</p>
-      <div class="social-icons">
-        <a href="#" aria-label="Facebook" class="fa-brands fa-facebook"></a>
-        <a href="#" aria-label="Instagram" class="fa-brands fa-instagram"></a>
-        <a href="#" aria-label="WhatsApp" class="fa-brands fa-whatsapp"></a>
-      </div>
+  <footer>
+    &copy; 2025 CHS Hardware (Nilai) — All Rights Reserved
+    <div>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
   </footer>
+
 </body>
 </html>
